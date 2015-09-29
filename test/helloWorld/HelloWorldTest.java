@@ -1,6 +1,6 @@
 package helloWorld;
 
-import uk.co.placona.helloWorld.Cronometro;
+import uk.co.placona.helloWorld.HelloWorld;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
@@ -12,7 +12,7 @@ public class HelloWorldTest{
 	@Test
 	public void test01(){
 		
-		Cronometro c = new Cronometro();
+		HelloWorld c = new HelloWorld();
 		
 		for (int i=0; i < 5000; i++) {
 			  c.incrementarTiempo();
