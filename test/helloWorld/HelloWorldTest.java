@@ -18,15 +18,27 @@ public class HelloWorldTest{
 		segundos = c.mostrarSegundos();
 		
 		assertEquals(0,minutos);
-		assertEquals(0,segundos);
 	}
 	
 	@Test
 	public void test02(){
+		assertEquals(0,segundos);
+	}
+	
+	@Test
+	public void test03(){
 		c = new HelloWorld();
 		for (int i=0; i < 120; i++) {
 			 c.incrementarTiempo();
 		}
-		assertEquals(0,c.mostrarSegundos());
+		
+		segundos=c.mostrarSegundos();
+		minutos=c.mostrarMinutos();
+		assertEquals(0,segundos);
+	}
+	
+	@Test
+	public void test04(){
+		assertEquals(2,minutos);
 	}
 }
