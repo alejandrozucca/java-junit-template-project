@@ -1,4 +1,4 @@
-package main;
+package uk.co.placona.helloWorld;
 
 public class Cronometro {
 	
