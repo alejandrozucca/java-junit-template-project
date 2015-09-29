@@ -2,9 +2,9 @@ package helloWorld;
 
 import uk.co.placona.helloWorld.Cronometro;
 import org.junit.Test;
-import static org.junit.Assert.AssertTrue;
+import static org.junit.Assert.AssertEquals;
 
-public class HelloWorldTest extends TestCase {
+public class HelloWorldTest{
 
 	@Test
 	public void test01(){
