@@ -13,19 +13,18 @@ public class HelloWorldTest{
 	public void test01(){
 		
 		HelloWorld c = new HelloWorld();
-		
-		for (int i=0; i < 5000; i++) {
-			  c.incrementarTiempo();
-			}
-		
 		minutos = c.mostrarMinutos();
 		segundos = c.mostrarSegundos();
 		
-		assertEquals(minutos,5);
+		assertEquals(0,minutos);
+		assertEquals(0,segundos);
 	}
 	
 	@Test
 	public void test02(){
-		assertEquals(segundos,3);
+		for (int i=0; i < 60; i++) {
+			 c.incrementarTiempo();
+		}
+		assertEquals(60,c.mostrarSegundos());
 	}
 }
