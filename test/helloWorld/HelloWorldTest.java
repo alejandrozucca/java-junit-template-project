@@ -20,6 +20,4 @@ public class Test_Contador extends TestCase {
 		Assert.assertTrue(minutos==5);
 		Assert.assertTrue(segundos==3);
 	}
-	
-	
 }
