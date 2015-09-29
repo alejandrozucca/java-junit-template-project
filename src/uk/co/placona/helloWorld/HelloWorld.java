@@ -17,7 +17,7 @@ public class HelloWorld {
 	public void incrementarTiempo(){
 		
 		segundos++;		
-		if(segundos == 60){
+		if(segundos >= 60){
 			minutos++;
 			segundos = 0;
 		}		
