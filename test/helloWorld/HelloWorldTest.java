@@ -18,7 +18,7 @@ public class HelloWorldTest{
 		int minutos = c.mostrarMinutos();
 		int segundos = c.mostrarSegundos();
 		
-		Assert.assertTrue(minutos==5);
-		Assert.assertTrue(segundos==3);
+		assertEquals(minutos,5);
+		assertEquals(segundos,3);
 	}
 }
