@@ -1,15 +1,25 @@
 package helloWorld;
 
-import static org.junit.Assert.*;
+import main.Cronometro;
+import junit.framework.*;
 
-import org.junit.Test;
+public class Test_Contador extends TestCase {
 
-import uk.co.placona.helloWorld.HelloWorld;
-
-public class HelloWorldTest {
 	@Test
-	public void testHellowWorld(){
-		HelloWorld hello = new HelloWorld();
-		assertEquals("A test for Hello World String", "Hello World", hello.sayHello());
+	public void test01(){
+		
+		Cronometro c = new Cronometro();
+		
+		for (int i=0; i < 5000; i++) {
+			  c.incrementarTiempo();
+			}
+		
+		int minutos = c.mostrarMinutos();
+		int segundos = c.mostrarSegundos();
+		
+		Assert.assertTrue(minutos==5);
+		Assert.assertTrue(segundos==3);
 	}
+	
+	
 }
