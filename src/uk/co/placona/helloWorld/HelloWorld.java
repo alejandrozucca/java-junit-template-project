@@ -15,12 +15,12 @@ public class HelloWorld {
 	}
 	
 	public void incrementarTiempo(){
-		
-		segundos++;		
+				
 		if(segundos >= 60){
 			minutos++;
 			segundos = 0;
-		}		
+		}
+		else segundos++;
 	}
 	
 	public int mostrarMinutos(){
