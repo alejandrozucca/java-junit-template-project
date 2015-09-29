@@ -1,7 +1,8 @@
 package helloWorld;
 
 import uk.co.placona.helloWorld.Cronometro;
-import junit.framework.*;
+import org.junit.Test;
+import org.junit.Assert.*;
 
 public class HelloWorldTest extends TestCase {
 
