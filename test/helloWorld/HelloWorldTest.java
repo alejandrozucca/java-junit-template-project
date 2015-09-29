@@ -1,6 +1,6 @@
 package helloWorld;
 
-import main.Cronometro;
+import uk.co.placona.helloWorld.Cronometro;
 import junit.framework.*;
 
 public class Test_Contador extends TestCase {
