@@ -24,9 +24,9 @@ public class HelloWorldTest{
 	@Test
 	public void test02(){
 		c = new HelloWorld();
-		for (int i=0; i < 60; i++) {
+		for (int i=0; i < 120; i++) {
 			 c.incrementarTiempo();
 		}
-		assertEquals(60,c.mostrarSegundos());
+		assertEquals(0,c.mostrarSegundos());
 	}
 }
