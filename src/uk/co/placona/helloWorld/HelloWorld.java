@@ -2,9 +2,9 @@ package uk.co.placona.helloWorld;
 
 public class HelloWorld {
 
-private int segundos, minutos;
+	private int segundos, minutos;
 	
-	public Cronometro(){
+	public HelloWorld(){
 		segundos = 0;
 		minutos = 0;
 	}
