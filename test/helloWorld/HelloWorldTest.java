@@ -3,7 +3,7 @@ package helloWorld;
 import uk.co.placona.helloWorld.Cronometro;
 import junit.framework.*;
 
-public class Test_Contador extends TestCase {
+public class HelloWorldTest extends TestCase {
 
 	@Test
 	public void test01(){
