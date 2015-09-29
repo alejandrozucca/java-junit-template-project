@@ -5,6 +5,9 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class HelloWorldTest{
+	
+	int minutos;
+	int segundos;
 
 	@Test
 	public void test01(){
@@ -15,10 +18,14 @@ public class HelloWorldTest{
 			  c.incrementarTiempo();
 			}
 		
-		int minutos = c.mostrarMinutos();
-		int segundos = c.mostrarSegundos();
+		minutos = c.mostrarMinutos();
+		segundos = c.mostrarSegundos();
 		
 		assertEquals(minutos,5);
+	}
+	
+	@Test
+	public void test02(){
 		assertEquals(segundos,3);
 	}
 }
