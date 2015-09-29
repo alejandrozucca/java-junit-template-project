@@ -8,11 +8,12 @@ public class HelloWorldTest{
 	
 	int minutos;
 	int segundos;
+	HelloWorld c;
 
 	@Test
 	public void test01(){
 		
-		HelloWorld c = new HelloWorld();
+		c = new HelloWorld();
 		minutos = c.mostrarMinutos();
 		segundos = c.mostrarSegundos();
 		
